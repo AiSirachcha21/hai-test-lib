@@ -4,7 +4,7 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import packageJson from "./package.json" assert { type: "json" };
 
-/** @type{import("rollup").} */
+/** @type{import("rollup").RollupOptions[]} */
 export default [
   {
     input: "src/index.ts",

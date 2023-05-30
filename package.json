@@ -1,5 +1,8 @@
 {
-  "name": "hai-components",
+  "name": "@AiSirachcha21-hai-test-lib",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/AiSirachcha21"
+  },
   "version": "1.0.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
