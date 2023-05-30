@@ -11,12 +11,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: mskelton/setup-yarn@v1.4.0
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm ci
-      - run: npm test
+      - run: yarn ci
+      - run: yarn test
 
   publish-gpr:
     needs: build
@@ -30,7 +31,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-      - run: npm ci
-      - run: npm publish
+      - run: yarn ci
+      - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
