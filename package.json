@@ -1,5 +1,5 @@
 {
-  "name": "@AiSirachcha21-hai-test-lib",
+  "name": "hai-test-lib",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/AiSirachcha21"
   },
